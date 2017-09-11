@@ -1,67 +1,40 @@
-# Titles
+# Titres
 
-As we started writing a markdown document, we need to add a title and some sub-headers.
+En commencant à écrire un document, il faut ajouter un titre et quelques titres secondaires.
 
-Markdown supports two styles of headers, Setext and atx.
+Le Markdown admet deux styles de titre, Setext et atx.
 
-Setext-style headers are “underlined” using equal signs (for first-level headers) and dashes (for second-level headers). For example:
 
-```
-This is an H1
-=============
+- Les titres du style Setext sont soulignés avec des signes = (pour les titres principaux) ou de - (tirets, pour les titres secondaires).
 
-This is an H2
--------------
-```
-
-Any number of underlining =’s or -’s will work.
-
-Atx-style headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:
+Par exemple :
 
 ```
-# This is an H1
+Voilà un titre H1
+=================
 
-## This is an H2
-
-###### This is an H6
+Voilà un titre H2
+-----------------
 ```
 
+Il est possible de saisir tout nombre de = ou -.
 
-Optionally, you may “close” atx-style headers. This is purely cosmetic — you can use this if you think it looks better. The closing hashes don’t even need to match the number of hashes used to open the header. (The number of opening hashes determines the header level.) :
+
+- Les titres du style atx nécessitent le signe # (dièse) en début de ligne, en nombre correspondant au rang du titre désiré.
+
+Par exemple :
+
+# Voilà un titre H1 de rang 1
+
+## Voilà un titre H2 de rang 2
+
+
+Facultativement, il est possible de "fermer" les titres du style atx. Cela reste un choix cosmétique.
+
+Par exemple :
 
 ```
-# This is an H1 #
+# Voilà un titre H1 de rang 1 #
 
-## This is an H2 ##
-
-### This is an H3 ######
+## Voilà un titre H2 de rang 2 ##
 ```
-
-
----
-
-Here's a quiz about markdown titles.
-
-Select the valid headers:
-- [x] `# hello`
-- [ ] `#hello`
-
-> Headers need space between the hash characters and the text.
-
-Select the valid headers:
-- [ ]  
-```
-test
-########
-```
-- [x]   
-```
-test
-=======
-```
-
-> Only '=' and '-' are accepted for underlining an header.
-
----
-
-
